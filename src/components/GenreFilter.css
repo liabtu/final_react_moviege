@@ -1,0 +1,45 @@
+/* Genre Filter Container */
+.genre-filter-container {
+    display: flex;
+    gap: 12px;
+    margin: 30px 0;
+    overflow-x: auto;
+    padding: 15px 5px;
+    scrollbar-width: none; /* Firefox-ისთვის */
+    -ms-overflow-style: none; /* IE-სთვის */
+}
+
+/* სქროლის დამალვა Chrome/Safari-სთვის */
+.genre-filter-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* ჟანრის ღილაკი */
+.genre-btn {
+    background: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #333;
+    padding: 10px 24px;
+    border-radius: 50px; /* ოვალური ფორმა */
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+/* მაუსის მიტანისას */
+.genre-btn:hover {
+    background: #252525;
+    border-color: #666;
+    transform: scale(1.05); /* ოდნავ ადიდებს */
+}
+
+/* აქტიური ჟანრი - წითელი ოვალური */
+.genre-btn.active {
+    background: #e50914; /* Netflix Red */
+    border-color: #e50914;
+    color: white;
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.5); /* წითელი Glow */
+}

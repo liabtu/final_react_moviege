@@ -1,0 +1,34 @@
+.favorites-container {
+  padding: 20px 5%;
+}
+.favorites-container h2 {
+  margin-bottom: 20px;
+}
+
+/* წაშლის ღილაკისთვის*/
+.fav-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.remove-btn {
+  background: #333;
+  color: white;
+  border: 1px solid #444;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.remove-btn:hover {
+  background: #e50914;
+  border-color: #e50914;
+}
+
+/* მოდალის შიგნით ტექსტის ფერი */
+.modal-content h3, .modal-content p {
+  color: white;
+  margin-bottom: 10px;
+}

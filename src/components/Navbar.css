@@ -1,0 +1,146 @@
+/*NAVBAR MAIN STRUCTURE (ნავბარის ძირითადი სტრუქტურა)*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 5%;
+  background-color: #141414; /* მუქი ფონი */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* დაშორება ლოგოს, სერჩსა და ლინკებს შორის */
+  flex: 1;
+}
+
+.nav-logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #e50914; /* Netflix Red */
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
+/*SEARCH INPUT (სერჩის სტილი)*/
+.nav-search-input {
+  width: 220px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 2px solid #e50914;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 0.9rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.nav-search-input:focus {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.4);
+  width: 280px; /* ფოკუსისას ფართოვდება */
+}
+
+/*NAV LINKS (მთავარი და ფავორიტები)*/
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #e50914;
+}
+
+/*NAV RIGHT ACTIONS (ღილაკები: EN/KA და თემა)*/
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* ენის ღილაკი */
+.lang-btn {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 5px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.75rem;
+  transition: 0.3s;
+}
+
+.lang-btn:hover {
+  background: #e50914;
+  border-color: #e50914;
+}
+
+/* თემის გადამრთველი (მზე/მთვარე) */
+.theme-btn {
+  background: #222;
+  border: 1px solid #444;
+  font-size: 1.1rem;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.theme-btn:hover {
+  transform: scale(1.1) rotate(15deg);
+  background: #333;
+}
+
+/*LIGHT MODE STYLES (ნათელი თემის შესწორებები)*/
+body.light .navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+body.light .nav-links a {
+  color: #141414; /* შავი ტექსტი თეთრ ფონზე */
+}
+
+body.light .nav-links a:hover {
+  color: #e50914;
+}
+
+body.light .nav-search-input {
+  background: #f0f0f0;
+  color: #141414;
+  border-color: #ddd;
+}
+
+body.light .nav-search-input:focus {
+  background: #ffffff;
+  border-color: #e50914;
+}
+
+body.light .lang-btn {
+  background: #f0f0f0;
+  color: #333;
+  border-color: #ddd;
+}
+
+body.light .theme-btn {
+  background: #ffdb00; /* მზიანი ფერი */
+  border: none;
+}

@@ -1,0 +1,77 @@
+/*ძირითადი სტილი (Dark Mode - Default)*/
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85); /* ოდნავ უფრო მუქი ფონი მინის ეფექტისთვის */
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3000;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.modal-content {
+  background: #1f1f1f;
+  padding: 40px;
+  border-radius: 15px;
+  position: relative;
+  max-width: 450px;
+  width: 90%;
+  text-align: center;
+  color: white;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform: scale(1);
+  animation: scaleUp 0.3s ease-out;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close-btn:hover {
+  color: #e50914;
+}
+
+/*LIGHT MODE სტილები*/
+body.light .modal-content {
+  background: #ffffff;
+  color: #141414;
+  border: 1px solid #ddd;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+}
+
+body.light .modal-overlay {
+  background: rgba(255, 255, 255, 0.7); /* თეთრი გამჭვირვალე ფონი */
+}
+
+body.light .modal-content h3 {
+  color: #141414;
+}
+
+body.light .modal-content p {
+  color: #444;
+}
+
+/* ანიმაციები */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}

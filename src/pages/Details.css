@@ -1,0 +1,76 @@
+.details-container {
+  min-height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+
+/* ფონი */
+.details-container::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: var(--bg-color) !important;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+/* კონტენტის ბლოკი */
+.details-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1000px;
+  background: var(--card-bg) !important;
+  padding: 30px;
+  border-radius: 15px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* --- აი აქ არის მთავარი გამოსავალი --- */
+
+/* მუქი რეჟიმი */
+body.dark .details-text h1, 
+body.dark .details-text p,
+body.dark .details-text .overview {
+  color: #ffffff !important;
+}
+
+/* ღია რეჟიმი - ვაიძულებთ გაშავებას */
+body.light .details-text h1, 
+body.light .details-text p,
+body.light .details-text .overview {
+  color: #141414 !important;
+}
+
+.details-content img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.details-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.overview {
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.fav-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #e50914;
+  color: white !important; /* ღილაკის ტექსტი ყოველთვის თეთრი დარჩეს */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
