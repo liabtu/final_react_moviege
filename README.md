@@ -4,6 +4,7 @@
 **MovieGE** არის თანამედროვე, რეაქტიული (React.js) ვებ-გვერდი, რომელიც იყენებს **TMDB API**-ს ფილმების მონაცემების გამოსაჩენად. პროექტი შექმნილია მომხმარებლის საუკეთესო გამოცდილებისთვის (UX), აქვს დახვეწილი დიზაინი და მრავალფეროვანი ფუნქციონალი.
 
 ---
+🌐 ნახე საიტი ლაივში (Live Demo) -  https://clever-valkyrie-39e702.netlify.app/
 
 ## ძირითადი ფუნქციონალი (Key Features)
 
@@ -39,14 +40,16 @@
 
 ## პროექტის სტრუქტურა (Project Structure)
 
-```text
 src/
-├── components/         # განმეორებადი კომპონენტები (Navbar, MovieCard, Pagination, Modal, GenreFilter)
+├── components/         # განმეორებადი კომპონენტები (Navbar, MovieCard, Modal, Pagination)
 ├── pages/              # მთავარი გვერდები (Home, Details, Favorites)
-├── assets/             # სტატიკური ფაილები
-├── translations.js     # ლექსიკონი KA/EN ენებისთვის
-├── App.js              # როუტინგი და გლობალური სთეითი
-└── index.css           # გლობალური სტილები და CSS ცვლადები (Themes)
+├── api.js              # Axios კონფიგურაცია და API ენდპოინტები
+├── translations.js     # ლექსიკონი (KA/EN)
+├── App.js              # როუტინგი და გლობალური ლოგიკა
+└── index.css           # თემები და გლობალური სტილები
+public/
+└── _redirects          # Netlify-ს კონფიგურაცია როუტინგისთვის
+
 
 ## ინსტალაცია და გაშვება
 
