@@ -29,12 +29,12 @@
 ---
 
 ## 📸 სქრინშოთები (Screenshots)
-![Home Page(Dark Mode)](image-1.png)
-![Details Page(Dark Mode)](image-2.png)
-![Add To Favorites(Dark Mode)](image-3.png)
-![Favorites Page(Dark Mode)](image-4.png)
-![Search(Dark Mode)](image-5.png)
-| ![Home page(Light Mode)](image-6.png) | ![Favorites(Light Mode)](image-7.png) | ![Details(Light Mode)](image-8.png) |
+![Home Page(Dark Mode)](./screenshots/image-1.png)
+![Details Page(Dark Mode)](./screenshots/image-2.png)
+![Add To Favorites(Dark Mode)](./screenshots/image-3.png)
+![Favorites Page(Dark Mode)](./screenshots/image-4.png)
+![Search(Dark Mode)](./screenshots/image-5.png)
+| ![Home page(Light Mode)](./screenshots/image-6.png) | ![Favorites(Light Mode)](./screenshots/image-7.png) | ![Details(Light Mode)](./screenshots/image-8.png) |
 ---
 
 ## პროექტის სტრუქტურა (Project Structure)
